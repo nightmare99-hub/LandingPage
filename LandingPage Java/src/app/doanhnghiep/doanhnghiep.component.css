@@ -1,0 +1,146 @@
+div.doanhnghiep {
+    background: #ffffff;
+    ;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    padding-bottom: 25px!important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div h2 {
+    color: #feffff;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: overline;
+    margin-top: 10px;
+}
+
+div p {
+    color: black;
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.text-6xl-text {
+    color: #e4bd31!important;
+}
+
+.text-6xl {
+    font-size: 60px;
+    color: #FFFF00;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+body {
+    align-items: center;
+    background: #e3e3e3;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1300px;
+    margin-bottom: 20px;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+@media screen and (max-width:800px) {
+    .slider,
+    .slide-track {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+@media only screen and (width: 414px) {
+    h2 {
+        font-size: 18px;
+    }
+    .text-6xl {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (width: 375px) {
+    h2 {
+        font-size: 18px;
+    }
+    .text-6xl {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (width: 600px) {
+    h2 {
+        font-size: 18px;
+    }
+    .text-6xl {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+    .text-6xl {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    h2 {
+        font-size: 22px;
+    }
+    .text-6xl {
+        font-size: 24px;
+    }
+}

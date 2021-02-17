@@ -1,0 +1,192 @@
+.three {
+    background: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #36D1DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    padding-bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 33%;
+}
+
+div {
+    color: white;
+}
+
+h2 {
+    color: yellow;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+div em {
+    font-weight: bolder;
+    color: rgb(1, 1, 151);
+    font-style: normal;
+}
+
+.col1 {
+    background-color: yellow;
+}
+
+.col2 {
+    background-color: #FFFF00;
+}
+
+.col3 {
+    background-color: #FFFF00;
+}
+
+.col4 {
+    background-color: #FFFF00;
+}
+
+.col5 {
+    background-color: #FFFF00;
+}
+
+.col {
+    margin-left: 30px;
+    width: 180px;
+    height: auto;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+p {
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#zoom-fade {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-text-shadow: 0 0 50px transparent;
+    -moz-text-shadow: 0 0 50px transparent;
+    -ms-text-shadow: 0 0 50px transparent;
+    -o-text-shadow: 0 0 50px transparent;
+    text-shadow: 0 0 50px transparent;
+    color: rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+#zoom-fade:hover {
+    -webkit-text-shadow: 0 0 0px black;
+    -moz-text-shadow: 0 0 0px black;
+    -ms-text-shadow: 0 0 0px black;
+    -o-text-shadow: 0 0 0px black;
+    text-shadow: 0 0 0px black;
+}
+
+#glow {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -moz-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -ms-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    -o-text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    text-shadow: 0 0 0 transparent, 0 0 0 transparent;
+    color: black;
+    overflow: visible;
+}
+
+#glow:hover {
+    color: black;
+    font-weight: bolder;
+    -webkit-text-shadow: 0 0 15px #ff2a00, 0 0 20px #ff9b1a;
+    -moz-text-shadow: 0 0 15px #ff2a00, 0 0 20px #ff9b1a;
+    -ms-text-shadow: 0 0 15px #ff2a00, 0 0 20px #ff9b1a;
+    -o-text-shadow: 0 0 15px #ff2a00, 0 0 20px #ff9b1a;
+    text-shadow: 0px 0px 0px black, 0 0 0px blue, 0 0 0px darkblue;
+}
+
+.col:hover {
+    background-color: #FFFF00;
+}
+
+@media only screen and (width: 768px) {
+    h2 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (width: 375px) {
+    h2 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .col {
+        width: 55px!important;
+        height: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (width: 414px) {
+    h2 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .col {
+        width: 90px!important;
+        height: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (width: 600px) {
+    h2 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .col {
+        padding-top: 10px;
+    }
+}

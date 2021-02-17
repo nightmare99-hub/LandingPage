@@ -1,0 +1,285 @@
+.nav {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 35px;
+    display: block;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    /*Đổ bóng cho menu*/
+    position: fixed;
+    /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0;
+    /*Nằm trên cùng*/
+    left: 0;
+    /*Nằm sát bên trái*/
+    z-index: 100000;
+    /*Hiển thị lớp trên cùng*/
+}
+
+.navbar {
+    padding: 0 0 0 20px;
+}
+
+.bg-light {
+    background-color: rgb(255, 255, 255)!important;
+}
+
+.nav-item.active .nav-link {
+    color: #cb356b;
+}
+
+.display-3 {
+    color: #fff;
+    display: block;
+    margin-top: 30px;
+}
+
+
+/*==Reset CSS==*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*==Style cơ bản cho website==*/
+
+div li a {
+    font-weight: bolder!important;
+    margin-left: 10px;
+    color: black;
+}
+
+#trangchu:hover {
+    color: #315271!important;
+}
+
+#nav-item:hover {
+    color: #315271!important;
+}
+
+.ultren {
+    /* định nghĩa một list / tức danh sách */
+    list-style-type: none;
+    /* kiểu của các dòng trong danh sách là không có gì đầu dòng */
+    margin: 0;
+    /* thụt lề bằng 0 */
+    padding: 0;
+    /* vùng đệm để đẩy thành phần chứa bên trong thụt vô bằng 0 */
+    overflow: hidden;
+    /* nếu chữ/ hình bị tràn ra ngoài, cắt bỏ */
+    background-color: #0b0638;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* màu chữ của các thứ chứa trong danh sách là màu đen hơi xám */
+}
+
+.litren {
+    margin-left: 60px;
+    /* định nghĩ cho các dòng trong danh sách */
+    float: left;
+    /* cho các dòng trôi nổi về góc bên trái như những cục shit trôi sông tấp vào bờ trái */
+}
+
+.atren {
+    font-weight: bolder;
+    /* định nghĩa thẻ a nằm bên trong một thẻ li */
+    display: block;
+    /* bình thường thẻ a là thẻ inline, không phải block, giờ cho nó thành block */
+    color: white;
+    /* màu chữ sẽ là màu trắng */
+    text-align: center;
+    /* canh lề giữa cho chữ, tức thẻ a sẽ là khối chữ nhật, chữ nằm giữa, canh đều hai bên */
+    padding: 16px;
+    /* vùng đệm thụt vào 16px rồi mới đến nội dung bên trong a */
+    text-decoration: none;
+    /* không trang trí hoa hòe hoa sói, tức rà chuột, kích chuột,... chữ vẫn trắng mà không ra màu khác hay chớp nháy, gạch chân gì cả */
+}
+
+.atren:hover {
+    /* định nghĩa hành động cho thẻ a khi rà chuột */
+    background-color: #315271;
+    color: black!important;
+    /* khi rà chuột vào khối chữ nhật do thẻ a taoọ ra thì đổi màu nền thành màu */
+}
+
+div.header {
+    width: 100%;
+    height: 30px;
+    background-color: #0b0638;
+    display: block;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    /*Đổ bóng cho menu*/
+    position: fixed;
+    /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0;
+    /*Nằm trên cùng*/
+    left: 0;
+    /*Nằm sát bên trái*/
+    z-index: 100000;
+    /*Hiển thị lớp trên cùng*/
+}
+
+@media only screen and (width: 600px) {
+    .header {
+        height: auto;
+    }
+    .ultren {
+        height: auto;
+    }
+    a {
+        font-size: 8px;
+    }
+    i {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    .litren {
+        margin-bottom: 10px;
+    }
+    li {
+        font-size: 8px;
+        height: auto;
+    }
+}
+
+@media only screen and (width: 768px) {
+    .header {
+        height: auto;
+    }
+    .ultren {
+        height: auto;
+    }
+    .litren {
+        margin-bottom: 10px;
+    }
+    a {
+        font-size: 8px;
+    }
+    i {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    li {
+        font-size: 8px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header {
+        width: 320px;
+        height: auto;
+    }
+    .ultren {
+        width: 320px;
+        height: auto;
+    }
+    .litren {
+        margin-top: 10px;
+        height: auto;
+        font-size: 8px;
+        margin: 0;
+        padding: 0;
+    }
+    .atren {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .header {
+        width: 414px;
+        height: auto;
+    }
+    a {
+        font-size: 8px;
+    }
+    .ultren {
+        line-height: 30px;
+        width: 414px;
+        height: auto;
+    }
+    .litren {
+        height: auto;
+        font-size: 8px;
+        margin: 0px 40px 0px 20px;
+        padding: 0;
+    }
+    .atren {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (width: 600px) {
+    .headertren {
+        height: 45px;
+    }
+    .container {
+        height: 45px;
+    }
+    .litren {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .ultren {
+        height: 45px;
+    }
+    .atren {
+        padding: 16px 10px 17px 10px;
+    }
+}
+
+@media only screen and (width: 375px) {
+    .headertren {
+        height: 70px;
+    }
+    div.container {
+        height: 70px;
+    }
+    .litren {
+        margin: 0 25px 10px 24px;
+        word-break: break-all;
+    }
+    ul.ultren {
+        width: 350px;
+        height: 70px;
+    }
+    div li a {
+        margin-left: 4px;
+    }
+}
+
+@media only screen and (width: 768px) {
+    .headertren {
+        height: 45px;
+    }
+    .container {
+        height: 45px;
+    }
+    .litren {
+        margin-left: 20px;
+    }
+    .ultren {
+        height: 45px;
+    }
+    a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    div li a {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    li {
+        margin: 0;
+    }
+}

@@ -1,0 +1,214 @@
+.four {
+    background: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 0;
+    padding-top: 0;
+    height: 300px;
+}
+
+.tool-tip {
+    padding: 5px 15px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 12px;
+    text-transform: uppercase;
+    width: 130px;
+    float: left;
+    text-align: center;
+}
+
+.btn {
+    background-color: #FFFF00;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    width: 125px
+}
+
+.tool-tip::after {
+    background-color: #323a45;
+    border-radius: 2px;
+    color: #fff;
+    content: attr(data-tooltip-title) " ";
+    font-weight: normal;
+    width: 300px;
+    padding: 5px 10px;
+    text-align: left;
+    text-transform: none;
+    white-space: pre-line;
+}
+
+.tool-tip::before {
+    width: 0;
+    height: 0;
+    content: "";
+}
+
+.tool-tip::before,
+.tool-tip::after {
+    position: absolute;
+    transition: opacity 250ms ease 0ms, transform 250ms ease 0ms;
+    transform-style: preserve-3d;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tool-tip[data-tooltip-position="bottom"]::after {
+    left: 40%;
+}
+
+.tool-tip[data-tooltip-position="bottom"]::after {
+    transform: translate3d(-50%, -10px, 0);
+}
+
+.tool-tip[data-tooltip-position="bottom"]::after {
+    top: calc(100% + 10px);
+}
+
+
+/* Pointers */
+
+.tool-tip[data-tooltip-position="bottom"]::before {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    left: 50%;
+}
+
+.tool-tip[data-tooltip-position="bottom"]::before {
+    transform: translate3d(-50%, -10px, 0);
+}
+
+.tool-tip[data-tooltip-position="bottom"]::before {
+    border-bottom: 7px solid #323a45;
+    top: calc(100% + 3px);
+}
+
+.tool-tip:hover::before,
+.tool-tip:hover::after {
+    opacity: 1;
+    z-index: 100;
+}
+
+.tool-tip[data-tooltip-position="bottom"]:hover::before,
+.tool-tip[data-tooltip-position="bottom"]:hover::after {
+    transform: translate3d(-50%, 0px, 0);
+}
+
+@media only screen and (width: 414px) {
+    h2 {
+        font-size: 14px;
+    }
+    .container-fluid {
+        margin: 0px 0px 0px 0px;
+        padding-left: 10px;
+        height: 90px!important;
+    }
+    #four {
+        height: 250px;
+    }
+    .tool-tip {
+        padding-left: 10px;
+        margin: 0 2px 0 0;
+        width: 45px;
+    }
+    .btn {
+        padding: 0px;
+        width: 45px;
+        font-size: 8px!important;
+    }
+    .tool-tip::after {
+        font-size: 8px;
+        width: 100px;
+    }
+}
+
+@media only screen and (width: 375px) {
+    h2 {
+        font-size: 14px;
+    }
+    .container-fluid {
+        margin: 0px 0px 0px 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 90px!important;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    #four {
+        height: 250px;
+    }
+    .tool-tip {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0 2px 0 0;
+        width: 45px;
+    }
+    .btn {
+        padding: 0px;
+        width: 45px;
+        font-size: 8px!important;
+    }
+    .tool-tip::after {
+        font-size: 8px;
+        width: 70px;
+        left: 30%!important;
+    }
+}
+
+@media only screen and (width: 600px) {
+    h2 {
+        font-size: 14px;
+    }
+    .tool-tip {
+        padding-left: 5px;
+        margin: 0 2px 0 0;
+        width: 70px;
+    }
+    .btn {
+        width: 70px;
+        font-size: 10px!important;
+    }
+    .tool-tip::after {
+        font-size: 8px;
+        width: 125px;
+    }
+}
+
+@media only screen and (width: 768px) {
+    h2 {
+        font-size: 16px;
+    }
+    .tool-tip {
+        margin: 0 5px 0 0;
+        width: 90px;
+    }
+    .btn {
+        width: 90px;
+        font-size: 12px!important;
+    }
+    .tool-tip::after {
+        font-size: 10px;
+        width: 145px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    h2 {
+        font-size: 18px;
+    }
+    .tool-tip {
+        margin: 0 1px 0 0;
+    }
+    .btn {
+        font-size: 14px!important;
+    }
+    .tool-tip::after {
+        font-size: 12px;
+        width: 190px;
+    }
+}

@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron-fluid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav {
+    background: #fff;
+}
+
+.nav-item.active .nav-link {
+    color: #cb356b;
+}
+
+.display-3 {
+    color: #fff;
+    display: block;
+    margin-top: 30px;
+}
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+body {
+    font-family: Arial;
+}
+
+p,
+span,
+.twitter {
+    font: normal normal 10px Arial;
+    text-align: center;
+    color: #998578;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.twitter {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.twitter:hover {
+    color: #FF7D6D;
+    text-decoration: none;
+}
+
+span {
+    font-style: italic;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fl-fe  {
+  background: linear-gradient(-45deg, #315271, #315271, #315271, #315271);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px;
+  width: 250px;
+  position: fixed;
+  right: -220px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  height: 35px;
+}
+
+.fl-ff  {
+  background: linear-gradient(-45deg, #dc3545, #dc3545, #dc3545, #dc3545);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px;
+  width: 250px;
+  position: fixed;
+  right: -220px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  height: 35px;
+}
+
+
+.fl-fl {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px;
+    width: 250px;
+    position: fixed;
+    right: -220px;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    height: 35px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fa {
+    font-size: 24px;
+    color: #fff;
+    padding: 0;
+    width: 40px;
+    margin-left: 8px;
+}
+
+.fl-fl:hover {
+    right: 0;
+}
+
+.fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px!important;
+    vertical-align: top!important;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.fl-fl i {
+    height: 30px;
+}
+
+.float-fb {
+    top: 160px;
+}
+
+.float-tw {
+    top: 215px;
+}
+
+.float-gp {
+    top: 270px;
+}
+
+.float-rs {
+    top: 325px;
+}
+
+.float-ig {
+    top: 380px;
+}
+
+.float-pn {
+    top: 435px;
+}
+
+
+.fl-fe:hover {
+  right: 0;
+}
+
+.fl-fe a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px!important;
+  vertical-align: top!important;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.fl-fe i {
+  height: 30px;
+}
+
+
+.fl-ff:hover {
+  right: 0;
+}
+
+.fl-ff a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px!important;
+  vertical-align: top!important;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.fl-ff i {
+  height: 30px;
+}

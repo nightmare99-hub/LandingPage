@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LandingPageVTI</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- <script type="text/JavaScript">
+        function sendEmail() {
+          var mailSubject = 'abc'//document.getElementById("mailSubject").value
+          var mailBody1 = 'abc'//document.getElementById("mailBody1").value
+          var mailBody2 = 'abc'//document.getElementById("mailBody2").value
+          var mailBody3 = 'abc'//document.getElementById("mailBody3").value
+          var mailBody4 = 'abc'//document.getElementById("mailBody4").value
+          Email.send({
+            SecureToken:"427a25ab-9dc3-411a-a4ec-2508d6b12621",
+            From : "nightmare68996@gmail.com",
+            To : 'nightmare68995@gmail.com',
+            Subject: 'Học Viên Đăng Ký Hỗ Trợ',
+            Body: 'Họ Tên' + mailBody1
+            // ,
+            // 'Email' + mailBody2,
+            // 'Số Điện Thoại'mailBody3,
+            // 'Thông Tin Hỗ Trợ'mailBody4
+          }) .then(function (message) {
+                alert(message);
+              });
+        }
+    </script> -->
+
+
+</head>
+
+
+<body class="mat-typography">
+
+    <app-root></app-root>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/d74347679c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', 'a[href^="#"]', function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top - 130
+            }, 300);
+        });
+    </script>
+
+    <script>
+        function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
+            let currentNumber = startNumber
+            const interval = window.setInterval(updateNumber, 17)
+
+            function updateNumber() {
+                if (currentNumber >= finalNumber) {
+                    clearInterval(interval)
+                } else {
+                    let inc = Math.ceil(finalNumber / (duration / 17))
+                    if (currentNumber + inc > finalNumber) {
+                        currentNumber = finalNumber
+                        clearInterval(interval)
+                    } else {
+                        currentNumber += inc
+                    }
+                    callback(currentNumber)
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            animateNumber(1636, 3000, 0, function(number) {
+                const formattedNumber = number.toLocaleString()
+                document.getElementById('transaction-count').innerText = formattedNumber
+            })
+
+            animateNumber(36, 3000, 0, function(number) {
+                const formattedNumber = number.toLocaleString()
+                document.getElementById('city-count').innerText = formattedNumber
+            })
+
+            animateNumber(68, 3000, 0, function(number) {
+                const formattedNumber = number.toLocaleString()
+                document.getElementById('customer-count').innerText = formattedNumber
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+.five {
+    background: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: xx-large;
+    margin-top: 10px;
+    color: #0f355c;
+}
+
+p {
+    font-style: italic;
+    font-size: 20px;
+    color: #312d2e;
+}
+
+
+/* external css: flickity.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.carousel {
+    background: #ffffff;
+}
+
+.carousel-cell {
+    width: 33%;
+    height: auto;
+    margin-right: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+img {
+    height: 210px;
+    width: 210px;
+    border-radius: 30px;
+}
+
+@media only screen and (width: 414px) {
+    h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 11px;
+    }
+    p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (width: 375px) {
+    h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (width: 600px) {
+    h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (width: 768px) {
+    h4 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+}

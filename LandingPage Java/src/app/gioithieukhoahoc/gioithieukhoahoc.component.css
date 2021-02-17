@@ -1,0 +1,129 @@
+ul li {
+    list-style: none;
+}
+
+table td {
+    font-weight: bolder;
+    border-radius: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #315271;
+}
+
+table th {
+    border-radius: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    color: #315271;
+    padding: 0;
+    margin-top: 10px!important;
+}
+
+table tr {
+    border-top: 0px;
+    border-bottom: 0px!important;
+}
+
+div.mx-auto {
+    cursor: pointer;
+}
+
+i {
+    margin-top: 15px!important;
+    font-size: 40px!important;
+}
+
+div.gioithieukhoahoc {
+    background: #f7f7f7;
+    ;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7f7f7, #f7f7f7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7f7f7, #f7f7f7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (width: 414px) {
+    h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    p {
+        margin: 10px 35px 10px 35px;
+        font-size: 14px!important;
+    }
+    table th {
+        font-size: 12px!important;
+    }
+    table td {
+        padding-right: 15px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width: 375px) {
+    h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    p {
+        margin: 10px 35px 10px 35px;
+        font-size: 14px!important;
+    }
+    table th {
+        font-size: 12px!important;
+    }
+    table td {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width: 600px) {
+    h4 {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    p {
+        font-size: 14px!important;
+    }
+    table th {
+        font-size: 12px!important;
+    }
+    table td {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width: 768px) {
+    h4 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    p {
+        font-size: 16px!important;
+    }
+    table th {
+        font-size: 12px!important;
+    }
+    table td {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    p {
+        font-size: 18px!important;
+    }
+    table th {
+        font-size: 14px!important;
+    }
+    table td {
+        font-size: 14px;
+    }
+}
